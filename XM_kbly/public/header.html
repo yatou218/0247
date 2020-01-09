@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <!--------头部-------------->
+    <div class="banner">
+        <!--logo-->
+        <div class="banner_top">
+            <div class="banner-imgs">
+                <div id="btn-left">
+                    <img src="img/header/left.jpg" >
+                </div>
+                <ul id="ul-imgs" style="width:3000px;margin-left:0;">
+                    <li>
+                        <a href="javascript:;"><img src="img/header/i-1.png"></a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"><img src="img/header/i-2.jpg"></a>
+                    </li>
+                    <li>
+                      <a href="javascript:;"><img src="img/header/i-1.png"></a>
+                    </li>
+                  </ul>
+                  <div id="btn-right">
+                    <img src="img/header/right_ar.png">
+                  </div>
+            </div> 
+            <div class="logo">
+                <a href="kbly_index.html">
+                    <img src="img/header/logo.png" alt="康保县乐途旅游发展有限公司">
+                </a>
+                <div class="logo_right">
+                    <span>服务咨询热线：</span>
+                    <p>0313-5550058</p>
+                </div>
+            </div>
+        <!--导航栏-->
+            <div class="nav_box">
+                <a href="kbly_index.html" class="nav_home"></a>
+                <ul>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li>
+                        <a href="culture.html">
+                            文化娱乐
+                        </a>
+                        <ul class=normal>
+                            <li>
+                                <a href="javascript:;">
+                                    二人台
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    风筝节
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    骑马
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    射箭
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    篝火晚会
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="accommodation.html">
+                            餐饮住宿
+                        </a>
+                            <ul class="normal">
+                                <li>
+                                    <a href="javascript:;">特色餐饮</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">住宿环境</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="attractons.html">
+                            周边景点
+                        </a>
+                            <ul class="normal">
+                                <li>
+                                    <a href="javascript:;">
+                                        金长城
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        康保南天门
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        康巴诺尔湖
+                                    </a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="road_trip.html">
+                            自驾游
+                        </a>
+                            <ul class="normal">
+                                <li>
+                                    <a href="javascript:;">
+                                        地图导航
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        野外露营
+                                    </a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="travel.html">
+                            旅游产品
+                        </a>
+                            <ul class="normal">
+                                <li>
+                                    <a href="javascript:;">
+                                            康保肉石
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        马奶酒
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">
+                                        肉石宴
+                                    </a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li><a href="visitor_center.html">游客中心</a></li>
+                    <li><a href="hotels_view.html">酒店预订</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <img src="img/header/nav.png">
+            </div>
+        </div>  
+    </div>
+<!--搜索栏及天气-->
+    <div class="neck">
+        <div class="neck_box">
+            <div class="neck_left">
+            </div>
+            <div class="neck_right">
+                <div class="n_r_top">
+                    <h2>站内公告：<h2><br>
+                    <span>康保县乐途旅游发展有限公司恭候您的光临</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var i=0;
+    var LIWIDTH=1600;
+    var DURATION=300;
+    var LICOUNT=2;
+    var ulImgs=document.getElementById("ul-imgs");
+    var li=document.getElementsByTagName("li");
+    function moveTo(to){
+      if(to==undefined){
+        to=i+1;
+      }
+      if(i==0){
+        if(to>i){
+          ulImgs.className="transition";
+        }else{
+          ulImgs.className="";
+          ulImgs.style.marginLeft=-LIWIDTH*LICOUNT+"px";
+          setTimeout(function(){
+            moveTo(LICOUNT-1);
+          },100);
+          return;
+        }
+      }
+      i=to;
+      ulImgs.style.marginLeft=-i*LIWIDTH+"px";
+      console.log(i);
+      if(i==LICOUNT){
+        i=0;
+        setTimeout(function(){
+          ulImgs.className="";
+          ulImgs.style.marginLeft=0;
+        },DURATION)
+      }
+    }
+  </script>
+  <script>
+    var btnLeft=document.getElementById("btn-left");
+    var btnRight=document.getElementById("btn-right");
+    //用开关，控制，上次动画没有播放完，下次动画不能开始！
+    var canClick=true;
+    btnRight.onclick=function(){
+      //调用两个按钮公共的移动方法，参数1表示移动到i+1的位置，相当于左移一个
+      move(1)
+    }
+    //两个按钮共用的移动函数，n传入1时，移动到i+1位置，左移。n传入-1时，移动到i-1位置，右移
+    function move(n){
+      if(canClick){//只有可以单击时
+        moveTo(i+n);//才调用真正移动ul的方法
+        canClick=false;//马上把开关关上，禁止再次点击
+        //只有本地transition动画播放完，才能自动打开开关，点击按钮才有反应。
+        setTimeout(function(){
+          canClick=true;
+        },DURATION+100);
+      }
+    }
+    btnLeft.onclick=function(){
+      move(-1);
+    }
+</script>
+<script>
+   var interval=3000;//每次轮播之间间隔3秒
+    var timer=setInterval(function(){
+      moveTo()
+    },3000);
+    var banner=document.getElementById("banner");
+    banner.onmouseover=function(){
+      clearInterval(timer);
+    }
+    banner.onmouseout=function(){
+      timer=setInterval(function(){
+        moveTo()
+      },3000);
+    }
+</script>
+</html>

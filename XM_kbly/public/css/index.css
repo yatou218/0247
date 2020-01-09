@@ -1,0 +1,163 @@
+/****一楼、二楼、三楼、四楼公有floor属性*****/
+.floor{
+    width: 1002px;
+    height: 618px;
+    margin:0 auto;
+}
+#floor_4{
+    height:477px;
+}
+/* 一楼、二楼、三楼、四楼的公有属性 */
+.floor_title,.floor2_title,.floor3_title,.floor4_title{
+    width:100%;
+    height:40px;
+    margin-top:6px;
+    border-bottom: 1px solid #dbdbdb;
+}
+/* 一楼、二楼、三楼、四楼标题公有属性 */
+.floor_title>span,.floor2_title>span,.floor3_title>span,.floor4_title>span{
+    font-size:22px;
+    color:#00bcc8;
+    padding-left:48px;
+}
+/* 一楼 */
+.floor_title>span{
+    background:url(../img/indeximg/title1.jpg) no-repeat;
+}
+/* 二楼 */
+.floor2_title>span{
+    background: url(../img/indeximg/title2.jpg) no-repeat;
+}
+/* 三楼 */
+.floor3_title>span{
+    background: url(../img/indeximg/title3.jpg) no-repeat;
+}
+/* 四楼 */
+.floor4_title>span{
+    background: url(../img/indeximg/title4.jpg) 0 center no-repeat;
+    background-size: 19%;
+}
+.floor4_title>a{
+    float: right;
+    color:#757575;
+    font-size:14px;
+}
+.right_img{
+    float: right;
+    margin-top:10px;
+}
+/**一楼、二楼、三楼、四楼图片公有属性**/
+.floor_img{
+    width:1002px;
+    height:406px;
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px;
+}
+.floor_img a{
+    color:#00bcc8;
+}
+/* 左 */
+.left{
+    width:236px;
+    height:400px;
+}
+.left img{
+    width: 236px;
+    height: 320px;
+    margin-top:10px;
+}
+/* 中 */
+.center{
+    width: 549px;
+    height:406px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.center img{
+    width:167px;
+    height:125px;
+    margin-top:10px;
+}
+/* 右 */
+.right{
+    width:176px;
+    height:406px;
+}
+.right>p{
+    font-size:16px;
+    color:#767676; 
+    font-weight: bold; 
+}
+.p_div{
+    width:100%;
+    height:120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left:-12px;
+}
+.p_div a{
+    margin:10px 15px;
+}
+.img_1F{
+    width:1000px;
+    height:100px;
+    margin:0 auto;
+}
+/*四楼图片*/
+.four_left{
+    width: 785px;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.four_left>div>a>img{
+    width:254px;
+    height:191px;
+    border:0;
+}
+.four_left>div>p>a{
+    font-size: 18px;
+    font-weight: bold;
+}
+.right_one{
+    width: 188px;
+    height: 72px;
+    margin-top:10px;
+    border-bottom: 1px dotted #979797;
+
+}
+.right_one>span{
+    background:#f00;
+    font-size:13px;
+    color:#fff;
+}
+.right_one>h3{
+    color: #01a7b2;
+    font-size:15px;
+    margin-top: -19px;
+    margin-left: 36px;
+}
+.right_one>a{
+    display: block;
+    color:#666;
+    margin-top:10px;
+    font-size:14px;
+}
+/* 查看详细 */
+.img_foot{
+    width:1002px;
+    margin-top:-106px;
+}
+.img_foot>a{
+    display: block;
+    width:254px;
+    height:34px;
+    float: left;
+}
+.img_foot>a:first-child{
+    margin-left: 162px;
+}
